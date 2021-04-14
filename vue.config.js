@@ -1,9 +1,9 @@
 const { defineConfig } = require('@vue/cli-service')
 
-const isProduction = process.env.NODE_ENV === 'production'
+const publicPath = process.env.VUE_PUBLIC_PATH || '/'
 
 module.exports = defineConfig({
-  publicPath: isProduction ? '/fm-testimonials' : '/',
+  publicPath,
   chainWebpack: config => {
     // Fix scss modules configuration
     config.module
