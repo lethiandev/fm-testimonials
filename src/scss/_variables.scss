@@ -1,5 +1,17 @@
 $color-body: hsl(210, 46%, 95%);
 $color-text: hsl(219, 29%, 14%);
 
+$color-white: hsl(0, 0%, 100%);
+$color-violet: hsl(263, 55%, 52%);
+$color-grayish-blue: hsl(217, 19%, 35%);
+$color-blackish-blue: hsl(219, 29%, 14%);
+
+$color-variants: (
+  'white': $color-white,
+  'violet': $color-violet,
+  'grayish-blue': $color-grayish-blue,
+  'blackish-blue': $color-blackish-blue,
+);
+
 $font-family: 'Barlow Semi Condensed', sans-serif;
 $font-size: 13px;

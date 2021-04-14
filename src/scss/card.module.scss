@@ -1,0 +1,14 @@
+@use 'variables' as vars;
+
+.card {
+  padding: 24px 30px;
+  background-color: vars.$color-white;
+  border-radius: 8px;
+}
+
+@each $name, $color in vars.$color-variants {
+  .card-#{$name} {
+    composes: card;
+    background-color: $color;
+  }
+}
