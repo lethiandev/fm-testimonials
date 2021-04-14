@@ -3,6 +3,7 @@ import { variant, Variant } from '@/utils/variant'
 import cardStyles from '@/scss/card.module.scss'
 
 interface Props {
+  class?: any
   variant?: Variant
 }
 
