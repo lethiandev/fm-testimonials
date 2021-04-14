@@ -66,41 +66,6 @@ const sampleData: Testimonial[] = [
     author: {
       id: 3,
       profileImageUrl: '',
-      firstName: 'Jeanette',
-      lastName: 'Harmon',
-      verified: true,
-    },
-    heading: 'An overall wonderful and rewarding experience',
-    content:
-      'Thank you for the wonderful experience! I now have a job I ' +
-      'really enjoy, and make a good living while doing something I love.',
-  },
-  {
-    id: 4,
-    author: {
-      id: 4,
-      profileImageUrl: '',
-      firstName: 'Patrick',
-      lastName: 'Abrams',
-      verified: true,
-    },
-    heading:
-      'Awesome teaching support from TAs who did the bootcamp ' +
-      'themselves. Getting guidance from them and learning from ' +
-      'their experiences was easy.',
-    content:
-      'The staff seem genuinely concerned about my progress which I ' +
-      'find really refreshing. The program gave me the confidence ' +
-      'necessary to be able to go out in the world and present myself ' +
-      'as a capable junior developer. The standard is above the rest. ' +
-      'You will get the personal attention you need from an incredible ' +
-      'community of smart and amazing people.',
-  },
-  {
-    id: 5,
-    author: {
-      id: 5,
-      profileImageUrl: '',
       firstName: 'Kira',
       lastName: 'Whittle',
       verified: true,
@@ -119,5 +84,40 @@ const sampleData: Testimonial[] = [
       'to it during interviews as an example of my development ' +
       'experience. It certainly helped me land a job as a full-stack ' +
       'developer after receiving multiple offers. 100% recommend!',
+  },
+  {
+    id: 4,
+    author: {
+      id: 4,
+      profileImageUrl: '',
+      firstName: 'Jeanette',
+      lastName: 'Harmon',
+      verified: true,
+    },
+    heading: 'An overall wonderful and rewarding experience',
+    content:
+      'Thank you for the wonderful experience! I now have a job I ' +
+      'really enjoy, and make a good living while doing something I love.',
+  },
+  {
+    id: 5,
+    author: {
+      id: 5,
+      profileImageUrl: '',
+      firstName: 'Patrick',
+      lastName: 'Abrams',
+      verified: true,
+    },
+    heading:
+      'Awesome teaching support from TAs who did the bootcamp ' +
+      'themselves. Getting guidance from them and learning from ' +
+      'their experiences was easy.',
+    content:
+      'The staff seem genuinely concerned about my progress which I ' +
+      'find really refreshing. The program gave me the confidence ' +
+      'necessary to be able to go out in the world and present myself ' +
+      'as a capable junior developer. The standard is above the rest. ' +
+      'You will get the personal attention you need from an incredible ' +
+      'community of smart and amazing people.',
   },
 ]
