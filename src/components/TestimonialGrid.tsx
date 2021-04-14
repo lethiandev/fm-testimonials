@@ -33,6 +33,8 @@ export default defineComponent({
 
     const cards = computed(() => props.testimonials.map(factorCard))
 
-    return () => <div class={tmStyles.testimonialGrid}>{cards.value}</div>
+    return () => (
+      <section class={tmStyles.testimonialGrid}>{cards.value}</section>
+    )
   },
 })
