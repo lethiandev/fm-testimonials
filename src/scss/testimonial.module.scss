@@ -5,10 +5,21 @@
   row-gap: 24px;
 }
 
-.testimonial:first-child {
-  background-image: url('@/assets/bg-pattern-quotation.svg');
-  background-position: top right 80px;
-  background-repeat: no-repeat;
+.testimonial {
+  &:first-child {
+    background-image: url('@/assets/bg-pattern-quotation.svg');
+    background-position: top right 80px;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(1),
+  &:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  &:nth-child(3) {
+    grid-row: span 2;
+  }
 }
 
 .testimonial h2 {
