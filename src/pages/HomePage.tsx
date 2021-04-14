@@ -1,5 +1,8 @@
 import { defineComponent, ref } from 'vue'
 import Testimonial from '@/models/Testimonial'
+import TestimonialGrid from '@/components/TestimonialGrid'
+
+import layoutStyles from '@/scss/layout.module.scss'
 
 export default defineComponent({
   name: 'HomePage',
@@ -7,7 +10,13 @@ export default defineComponent({
     // Uses static json but can be used to fetch data
     const testimonials = ref<Testimonial[]>(sampleData)
 
-    return () => <div>HomePage.tsx</div>
+    return () => (
+      <main class={layoutStyles.containerMain}>
+        <div class={layoutStyles.containerMainWrapper}>
+          <TestimonialGrid testimonials={testimonials.value} />
+        </div>
+      </main>
+    )
   },
 })
 
