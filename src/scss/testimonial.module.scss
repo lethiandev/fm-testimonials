@@ -80,4 +80,9 @@
 .testimonial:nth-child(n + 3) > p {
   margin-bottom: 0;
   padding-top: 8px;
+
+  @include bp.tablet {
+    margin-bottom: 8px;
+    padding-top: 0;
+  }
 }
