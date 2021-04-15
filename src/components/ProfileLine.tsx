@@ -24,13 +24,13 @@ export default defineComponent({
     )
 
     return () => (
-      <div class={styles.profile}>
+      <article class={styles.profile}>
         <div class={styles.profilePicture}>
           <ProfilePicture author={props.author} variant={props.variant} />
         </div>
         <h3 class={styles.profileHeading}>{fullName(props.author)}</h3>
         <p class={styles.profileStatus}>{verification.value}</p>
-      </div>
+      </article>
     )
   },
 })
