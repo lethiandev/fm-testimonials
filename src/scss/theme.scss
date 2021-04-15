@@ -5,6 +5,12 @@ body {
   margin: 0;
 }
 
+html {
+  // Base font size for rem units
+  font-size: vars.$font-size;
+  line-height: 1.2;
+}
+
 body {
   background-color: vars.$color-body;
   font-family: vars.$font-family;
