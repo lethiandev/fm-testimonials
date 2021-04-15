@@ -1,8 +1,18 @@
+@use 'breakpoints' as bp;
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 30px;
   row-gap: 24px;
+
+  @include bp.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include bp.mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .testimonial {
@@ -13,12 +23,31 @@
   }
 
   &:nth-child(1),
-  &:nth-child(5) {
+  &:nth-child(4) {
     grid-column: span 2;
   }
 
-  &:nth-child(3) {
-    grid-row: span 2;
+  &:nth-child(5) {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+
+  @include bp.tablet {
+    &:nth-child(1),
+    &:nth-child(4),
+    &:nth-child(5) {
+      grid-column: span 2;
+    }
+  }
+
+  @include bp.mobile {
+    &:first-child {
+      background-position: top right 24px;
+    }
+
+    // Force single element per grid's cell
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
   }
 }
 
