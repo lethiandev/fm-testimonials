@@ -2,6 +2,7 @@ import { defineComponent, PropType } from 'vue'
 import { Variant } from '@/utils/variant'
 import Testimonial from '@/models/Testimonial'
 import VCard from './VCard'
+import ProfileLine from './ProfileLine'
 
 import tmStyles from '@/scss/testimonial.module.scss'
 
@@ -20,6 +21,7 @@ export default defineComponent({
   setup(props) {
     return () => (
       <VCard class={tmStyles.testimonial} variant={props.variant}>
+        <ProfileLine author={props.testimonial.author} />
         <h2>{props.testimonial.heading}</h2>
         <p>{props.testimonial.content}</p>
       </VCard>
