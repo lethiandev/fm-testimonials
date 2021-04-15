@@ -2,6 +2,12 @@ import { defineComponent, ref } from 'vue'
 import Testimonial from '@/models/Testimonial'
 import TestimonialGrid from '@/components/TestimonialGrid'
 
+import danielImage from '@/assets/image-daniel.jpg'
+import jonathanImage from '@/assets/image-jonathan.jpg'
+import kiraImage from '@/assets/image-kira.jpg'
+import jeanetteImage from '@/assets/image-jeanette.jpg'
+import patrickImage from '@/assets/image-patrick.jpg'
+
 import layoutStyles from '@/scss/layout.module.scss'
 
 export default defineComponent({
@@ -27,7 +33,7 @@ const sampleData: Testimonial[] = [
     id: 1,
     author: {
       id: 1,
-      profileImageUrl: '',
+      profileImageUrl: danielImage,
       firstName: 'Daniel',
       lastName: 'Clifford',
       verified: true,
@@ -50,7 +56,7 @@ const sampleData: Testimonial[] = [
     id: 2,
     author: {
       id: 2,
-      profileImageUrl: '',
+      profileImageUrl: jonathanImage,
       firstName: 'Jonathan',
       lastName: 'Walters',
       verified: true,
@@ -65,7 +71,7 @@ const sampleData: Testimonial[] = [
     id: 3,
     author: {
       id: 3,
-      profileImageUrl: '',
+      profileImageUrl: kiraImage,
       firstName: 'Kira',
       lastName: 'Whittle',
       verified: true,
@@ -89,7 +95,7 @@ const sampleData: Testimonial[] = [
     id: 4,
     author: {
       id: 4,
-      profileImageUrl: '',
+      profileImageUrl: jeanetteImage,
       firstName: 'Jeanette',
       lastName: 'Harmon',
       verified: true,
@@ -103,7 +109,7 @@ const sampleData: Testimonial[] = [
     id: 5,
     author: {
       id: 5,
-      profileImageUrl: '',
+      profileImageUrl: patrickImage,
       firstName: 'Patrick',
       lastName: 'Abrams',
       verified: true,
