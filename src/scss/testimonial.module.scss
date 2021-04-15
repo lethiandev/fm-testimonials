@@ -44,3 +44,10 @@
     content: ' ”';
   }
 }
+
+// Adjust bottom row margins
+// Design provides inconsistent gaps though
+.testimonial:nth-child(n + 3) > p {
+  margin-bottom: 0;
+  padding-top: 8px;
+}
