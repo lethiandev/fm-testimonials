@@ -1,0 +1,20 @@
+@use 'variables' as vars;
+
+.portrait {
+  object-fit: cover;
+  vertical-align: middle;
+
+  border: 2px solid transparent;
+  border-radius: 2048px;
+
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+@each $name, $colors in vars.$color-variants {
+  .portrait-#{$name} {
+    composes: portrait;
+    border-color: nth($colors, 3);
+  }
+}

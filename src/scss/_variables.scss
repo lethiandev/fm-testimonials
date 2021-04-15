@@ -7,10 +7,10 @@ $color-grayish-blue: hsl(217, 19%, 35%);
 $color-blackish-blue: hsl(219, 29%, 14%);
 
 $color-variants: (
-  'white': $color-white $color-text,
-  'violet': $color-violet $color-white,
-  'grayish-blue': $color-grayish-blue $color-white,
-  'blackish-blue': $color-blackish-blue $color-white,
+  'white': $color-white $color-text transparent,
+  'violet': $color-violet $color-white transparentize($color-white, 0.7),
+  'grayish-blue': $color-grayish-blue $color-white transparent,
+  'blackish-blue': $color-blackish-blue $color-white $color-violet,
 );
 
 $font-family: 'Barlow Semi Condensed', sans-serif;
