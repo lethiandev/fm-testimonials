@@ -1,0 +1,21 @@
+.profile {
+  margin-bottom: 20px;
+
+  display: grid;
+  grid-template-columns: 32px auto;
+  column-gap: 16px;
+}
+
+.profile-picture {
+  grid-row: span 2;
+}
+
+.profile-heading {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.profile-status {
+  margin: 0;
+  opacity: 0.7;
+}
