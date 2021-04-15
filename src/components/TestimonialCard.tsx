@@ -1,4 +1,4 @@
-import { defineComponent, PropType } from 'vue'
+import { computed, defineComponent, PropType } from 'vue'
 import { Variant } from '@/utils/variant'
 import Testimonial from '@/models/Testimonial'
 import VCard from './VCard'
@@ -19,9 +19,11 @@ export default defineComponent({
     },
   },
   setup(props) {
+    const author = computed(() => props.testimonial.author)
+
     return () => (
       <VCard class={tmStyles.testimonial} variant={props.variant}>
-        <ProfileLine author={props.testimonial.author} />
+        <ProfileLine author={author.value} variant={props.variant} />
         <h2>{props.testimonial.heading}</h2>
         <p>{props.testimonial.content}</p>
       </VCard>
