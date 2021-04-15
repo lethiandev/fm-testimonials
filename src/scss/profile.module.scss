@@ -1,9 +1,9 @@
 .profile {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   display: grid;
   grid-template-columns: 32px auto;
-  column-gap: 16px;
+  column-gap: 15px;
 }
 
 .profile-picture {
@@ -11,11 +11,13 @@
 }
 
 .profile-heading {
-  margin: 0;
+  margin: 2px 0 0 0;
   font-size: 1rem;
 }
 
 .profile-status {
   margin: 0;
+  letter-spacing: 0.25px;
+  font-size: 0.8rem;
   opacity: 0.7;
 }
